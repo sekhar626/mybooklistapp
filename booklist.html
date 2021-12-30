@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device,initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css">
+    <title>MyBookList</title>
+</head>
+<body>
+    <div class="app-container m-3">
+        <h1 class="display-4 mt-5 text-center">
+            <i class="fas fa-book-open"></i>My <span class="text-primary">BookList</span> App
+        </h1>
+        <form id="form-id">
+        <div class="form-group m-3">
+            <label for="title">Title<span class="text-danger">*</span></label>
+            <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group m-3">
+            <label for="Author">Author<span class="text-danger">*</span></label>
+            <input id="Author" type="text" class="form-control">
+        </div>
+        <div class="form-group m-3">
+            <label for="ISBN">ISBN<span class="text-danger">*</span></label>
+            <input type="text" id="ISBN" class="form-control">
+        </div>
+            <input type="submit" value="ADD" class="btn btn-primary m-3">
+        </form>
+        <table class="table table-striped m-3">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="book.js"></script>
+</body>
+</html>
